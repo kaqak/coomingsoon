@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__body">
+          <div class="countdown__section">
+            <div id="days" class="value">00</div>
+            <div class="countdown__label">DITË</div>
+          </div>
+          <div class="countdown__section">
+            <div id="hours" class="value">00</div>
+            <div class="countdown__label">ORË</div>
+          </div>
+          <div class="countdown__section">
+            <div id="minutes" class="value">00</div>
+            <div class="countdown__label">MINUTA</div>
+          </div>
+          <div class="countdown__section">
+            <div id="seconds" class="value">00</div>
+            <div class="countdown__label">SEKONDA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="register">
+        <p>Regjistrohu per tu njoftuar i pari lansimin e akademise</p>
+        <form action="" role="email" class="search">
+          <input
+            type="email"
+            class="search-input"
+            placeholder="E-maili yt"
+            aria-label="Search"
+          />
+          <button type="submit" class="search-button">
+            <span> REGJISTROHU</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="parent logo">
+        <img class="logo" src="/logo-xheza.svg" alt="" />
+      </div>
+      <div id="scene" class="scene">
+        <div class="parent" data-depth-x="0.1" data-depth-y="-0.1">
+          <img class="word" src="/imgs/course-icons/word.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="-0.10" data-depth-y="-0.1">
+          <img class="js" src="/imgs/course-icons/js.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="0.1" data-depth-y="0.1">
+          <img class="ps" src="/imgs/course-icons/ps.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="-0.1" data-depth-y="0.1">
+          <img class="php" src="/imgs/course-icons/php.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="0.1" data-depth-y="0.1">
+          <img class="sketch" src="/imgs/course-icons/sketch.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="0.1" data-depth-y="-0.1">
+          <img class="css" src="/imgs/course-icons/css.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="-0.1" data-depth-y="0.1">
+          <img class="excel" src="/imgs/course-icons/excel.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="0.1" data-depth-y="-0.1">
+          <img class="xd" src="/imgs/course-icons/xd.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="-0.1" data-depth-y="-0.1">
+          <img class="figma" src="/imgs/course-icons/figma.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="0.1" data-depth-y="-0.1">
+          <img class="html" src="/imgs/course-icons/html.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="-0.10" data-depth-y="-0.10">
+          <img class="java" src="/imgs/course-icons/java.svg" alt="" />
+        </div>
+        <div class="parent" data-depth-x="-0.1" data-depth-y="-0.10">
+          <img class="ps_small" src="/imgs/course-icons/ps_small.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var scene = document.getElementById("scene");
+      var parallaxInstance = new Parallax(scene, {
+        relativeInput: true,
+      });
+    </script>
+  </body>
+</html>

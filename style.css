@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(211, 211, 211, 0.2),
+      rgba(211, 211, 211, 0.2)
+    ),
+    url(/screenshot.png); */
+  font-family: "Inter", sans-serif;
+}
+.container {
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.parent {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.word {
+  position: absolute;
+  top: 620px;
+  left: 300px;
+}
+.js {
+  position: absolute;
+  top: 554px;
+  left: 492px;
+}
+.ps {
+  position: absolute;
+  top: 483px;
+  left: 742px;
+}
+.php {
+  position: absolute;
+  top: 608px;
+  left: 877px;
+}
+.sketch {
+  position: absolute;
+  top: 510px;
+  left: 1139px;
+}
+.css {
+  position: absolute;
+  top: 545px;
+  left: 1357px;
+}
+.ps_small {
+  position: absolute;
+  top: 710px;
+  left: 1552px;
+}
+.excel {
+  position: absolute;
+  top: 719px;
+  left: 418px;
+}
+.xd {
+  position: absolute;
+  top: 730px;
+  left: 555px;
+}
+.figma {
+  position: absolute;
+  top: 720px;
+  left: 758px;
+}
+.html {
+  position: absolute;
+  top: 735px;
+  left: 1052px;
+}
+.java {
+  position: absolute;
+  top: 710px;
+  left: 1222px;
+}
+
+.card {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.25rem;
+  margin-top: 20px;
+  text-align: center;
+}
+.card__body {
+  font-size: 0;
+  padding: 1.25rem;
+}
+.card__title {
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
+}
+
+.countdown__section {
+  display: inline-block;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+.countdown__section:first-child {
+  margin-left: 0;
+}
+.countdown__section > .value {
+  background-color: #eeeef0;
+  border-radius: 24px;
+  font-family: "inter";
+  font-size: 48px;
+  color: #101010;
+  line-height: 100px;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+}
+#days {
+  background-color: #f6512c;
+  color: #fff;
+}
+.countdown__label {
+  color: #a2a4a6;
+  font-size: 10px;
+  font-family: "inter";
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 12px;
+  padding-top: 20px;
+  text-align: center;
+}
+/* Reset styles */
+.search {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input,
+button {
+  all: unset;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Main CSS */
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 57px;
+  max-width: 385px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #e3e4e6;
+}
+.search-input {
+  width: 85.5%;
+  height: 100%;
+  margin: 0 5px 0 18px;
+  background-color: transparent;
+  appearance: none;
+}
+.search-button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  min-width: 40px;
+  margin: 10px 10px 10px auto;
+  padding: 0 14px;
+  background-color: #f6512c;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 1.2em;
+  flex-shrink: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.search-button::before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+}
+.search-button span {
+  display: inline-block;
+  width: 50px;
+  padding-left: 5px;
+  color: #ffffff;
+  font-family: "inter";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  line-height: 15px;
+  text-align: center;
+  overflow: hidden;
+  transition: width 0.4s ease, padding-left 0.1s ease;
+}
+.search-button:focus {
+  outline: none !important;
+  box-shadow: 0 0 2px 2px #b0caf1;
+}
+
+@media (min-width: 768px) {
+  .search {
+    font-size: 14px;
+  }
+  .search-button span {
+    width: 0;
+    padding-left: 0;
+    transition: width 0.4s ease, padding-left 0.1s ease 0.3s;
+  }
+  .search-button:hover span,
+  .search-button:focus span {
+    width: 110px;
+    padding-left: 5px;
+    transition: width 0.4s ease, padding-left 0.1s ease;
+  }
+}
+.register p {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 23px;
+  width: 351px;
+  color: #a2a4a6;
+  font-family: "inter";
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  line-height: 23px;
+  text-align: center;
+}
